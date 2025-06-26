@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes S-Class 63 E AMG 2024</title>
+    <link rel="stylesheet" href="styles_sub.css">
+</head>
+<body>
+    <header>
+        <h1>Mercedes S-Class 63 E AMG 2024</h1>
+    </header>
+
+    <div class="car-details-page">
+        <div class="car-images">
+            <img src="mercedes-s63-e-amg-2024/mercedes-s63-e-amg-2024_1.jpg" alt="Mercedes S-Class 63 E AMG 2024">
+            <img src="mercedes-s63-e-amg-2024/mercedes-s63-e-amg-2024_2.jpg" alt="Mercedes S-Class 63 E AMG 2024">
+            <img src="mercedes-s63-e-amg-2024/mercedes-s63-e-amg-2024_3.jpg" alt="Mercedes S-Class 63 E AMG 2024">
+            <img src="mercedes-s63-e-amg-2024/mercedes-s63-e-amg-2024_4.jpg" alt="Mercedes S-Class 63 E AMG 2024">
+            <img src="mercedes-s63-e-amg-2024/mercedes-s63-e-amg-2024_5.jpg" alt="Mercedes S-Class 63 E AMG 2024">
+        </div>
+
+        <div class="car-info">
+            <h2>£150,000</h2>
+            <p>Mileage: 1,000 miles</p>
+            <p>Fuel: Plug-in Hybrid</p>
+            <p>Transmission: Automatic</p>
+            <p>Engine: 4.0L</p>
+            <a href="buy.html?car_name=Mercedes S-Class 63 E AMG 2024&car_price=£150000"><button class="buy-btn">Buy Now</button></a>
+            <button class="back-btn" onclick="window.location.href='index.html';">Back to Cars</button>
+        </div>
+    </div>
+
+    <button class="scroll-btn left" onclick="scrollLeft()">&#8592;</button>
+    <button class="scroll-btn right" onclick="scrollRight()">&#8594;</button>
+
+    <script>
+        function scrollLeft() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: -400,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: 400,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <footer>
+        <p>&#169; 2025 Car Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>

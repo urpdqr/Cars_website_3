@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Countach LP5000</title>
+    <link rel="stylesheet" href="styles_sub.css">
+</head>
+<body>
+    <header>
+        <h1>Lamborghini Countach LP5000</h1>
+    </header>
+
+    <div class="car-details-page">
+        <div class="car-images">
+            <img src="lamborghini-countach.jpg" alt="Lamborghini Countach LP5000">
+        </div>
+
+        <div class="car-info">
+            <h2>£500,000</h2>
+            <p>Mileage: 25,000 miles</p>
+            <p>Fuel: Petrol</p>
+            <p>Transmission: Manual</p>
+            <p>Engine: 5.2L V12</p>
+            <a href="buy.html?car_name=Lamborghini Countach LP5000&car_price=£500000"><button class="buy-btn">Buy Now</button></a>
+            <button class="back-btn" onclick="window.location.href='index.html';">Back to Cars</button>
+        </div>
+    </div>
+
+    <button class="scroll-btn left" onclick="scrollLeft()">&#8592;</button>
+    <button class="scroll-btn right" onclick="scrollRight()">&#8594;</button>
+
+    <script>
+        function scrollLeft() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: -400,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: 400,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <footer>
+        <p>&#169; 2025 Car Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 Turbo S 2024</title>
+    <link rel="stylesheet" href="styles_sub.css">
+</head>
+<body>
+    <header>
+        <h1>Porsche 911 Turbo S 2024</h1>
+    </header>
+
+    <div class="car-details-page">
+        <div class="car-images">
+            <img src="porsche-911-turbo-s-2024/porsche-911-turbo-s-2024_1.jpg" alt="Porsche 911 Turbo S 2024">
+            <img src="porsche-911-turbo-s-2024/porsche-911-turbo-s-2024_2.jpg" alt="Porsche 911 Turbo S 2024">
+            <img src="porsche-911-turbo-s-2024/porsche-911-turbo-s-2024_3.jpg" alt="Porsche 911 Turbo S 2024">
+            <img src="porsche-911-turbo-s-2024/porsche-911-turbo-s-2024_4.jpg" alt="Porsche 911 Turbo S 2024">
+            <img src="porsche-911-turbo-s-2024/porsche-911-turbo-s-2024_5.jpg" alt="Porsche 911 Turbo S 2024">
+        </div>
+
+        <div class="car-info">
+            <h2>£180,000</h2>
+            <p>Mileage: 4,000 miles</p>
+            <p>Fuel: Petrol</p>
+            <p>Transmission: Automatic</p>
+            <p>Engine: 3.8L Turbo</p>
+            <a href="buy.html?car_name=Porsche 911 Turbo S 2024&car_price=£180000"><button class="buy-btn">Buy Now</button></a>
+            <button class="back-btn" onclick="window.location.href='index.html';">Back to Cars</button>
+        </div>
+    </div>
+
+    <button class="scroll-btn left" onclick="scrollLeft()">&#8592;</button>
+    <button class="scroll-btn right" onclick="scrollRight()">&#8594;</button>
+
+    <script>
+        function scrollLeft() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: -400,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: 400,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <footer>
+        <p>&#169; 2025 Car Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>

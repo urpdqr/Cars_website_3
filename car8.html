@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Murcielago LP640 2007</title>
+    <link rel="stylesheet" href="styles_sub.css">
+</head>
+<body>
+    <header>
+        <h1>Lamborghini Murcielago LP640 2007</h1>
+    </header>
+
+    <div class="car-details-page">
+        <div class="car-images">
+            <img src="lamborghini-murcielago-lp640-2007/lamborghini-murcielago-lp640-2007_1.jpg" alt="Lamborghini Murcielago LP640 2007">
+            <img src="lamborghini-murcielago-lp640-2007/lamborghini-murcielago-lp640-2007_2.jpg" alt="Lamborghini Murcielago LP640 2007">
+            <img src="lamborghini-murcielago-lp640-2007/lamborghini-murcielago-lp640-2007_3.jpg" alt="Lamborghini Murcielago LP640 2007">
+            <img src="lamborghini-murcielago-lp640-2007/lamborghini-murcielago-lp640-2007_4.jpg" alt="Lamborghini Murcielago LP640 2007">
+            <img src="lamborghini-murcielago-lp640-2007/lamborghini-murcielago-lp640-2007_5.jpg" alt="Lamborghini Murcielago LP640 2007">
+        </div>
+
+        <div class="car-info">
+            <h2>£200,000</h2>
+            <p>Mileage: 15,000 miles</p>
+            <p>Fuel: Petrol</p>
+            <p>Transmission: Manual</p>
+            <p>Engine: 6.5L V12</p>
+            <a href="buy.html?car_name=Lamborghini Murcielago LP640 2007&car_price=£200000"><button class="buy-btn">Buy Now</button></a>
+            <button class="back-btn" onclick="window.location.href='index.html';">Back to Cars</button>
+        </div>
+    </div>
+
+    <button class="scroll-btn left" onclick="scrollLeft()">&#8592;</button>
+    <button class="scroll-btn right" onclick="scrollRight()">&#8594;</button>
+
+    <script>
+        function scrollLeft() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: -400,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const imagesContainer = document.querySelector('.car-images');
+            imagesContainer.scrollBy({
+                left: 400,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <footer>
+        <p>&#169; 2025 Car Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>

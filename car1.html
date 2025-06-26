@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Rover 2024</title>
+    <link rel="stylesheet" href="styles_sub.css">
+    <script src="cars_sub.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Range Rover 2024</h1>
+    </header>
+
+    <div class="content">
+        <div class="car-details-page">
+            <div class="car-images">
+                <img id="mainImage" src="range-rover-2024/range-rover-2024_1.jpg" alt="Range Rover 2024" class="main-image">
+                <div class="thumbnail-container">
+                    <img src="range-rover-2024/range-rover-2024_1.jpg" alt="Range Rover 2024" class="thumbnail" onclick="changeImage(this)">
+                    <img src="range-rover-2024/range-rover-2024_2.jpg" alt="Range Rover 2024" class="thumbnail" onclick="changeImage(this)">
+                    <img src="range-rover-2024/range-rover-2024_3.jpg" alt="Range Rover 2024" class="thumbnail" onclick="changeImage(this)">
+                    <img src="range-rover-2024/range-rover-2024_4.jpg" alt="Range Rover 2024" class="thumbnail" onclick="changeImage(this)">
+                    <img src="range-rover-2024/range-rover-2024_5.jpg" alt="Range Rover 2024" class="thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <div class="car-info">
+                <h2>£120,000</h2>
+                <p>Mileage: 5,000 miles</p>
+                <p>Fuel: Hybrid</p>
+                <p>Transmission: Automatic</p>
+                <p>Engine: 3.0L</p>
+                <a href="buy.html?car_name=Range Rover 2024&car_price=£120000"><button class="buy-btn">Buy Now</button></a>
+                <button class="back-btn" onclick="window.location.href='index.html';">Back to Cars</button>
+            </div>
+        </div>
+
+        
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="range-rover-2024/range-rover-2024_1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="range-rover-2024/range-rover-2024_2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="range-rover-2024/range-rover-2024_3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="range-rover-2024/range-rover-2024_4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="range-rover-2024/range-rover-2024_5.jpg" style="width:100%">
+                </div>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(element) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = element.src;
+            openModal();
+            currentSlide(Array.from(element.parentNode.children).indexOf(element) + 1);
+        }
+
+        function scrollLeft() {
+            const imagesContainer = document.querySelector('.thumbnail-container');
+            imagesContainer.scrollBy({
+                left: -400,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const imagesContainer = document.querySelector('.thumbnail-container');
+            imagesContainer.scrollBy({
+                left: 400,
+                behavior: 'smooth'
+            });
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                scrollLeft();
+            } else if (event.key === 'ArrowRight') {
+                scrollRight();
+            }
+        });
+    </script>
+    <footer>
+        <p>&#169; 2025 Car Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>

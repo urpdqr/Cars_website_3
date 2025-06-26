@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+header {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 1em 0;
+    text-align: center;
+}
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.car-card {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+.car-card:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+.car-image {
+    flex: 0 0 250px;
+}
+.car-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.car-details {
+    flex: 1;
+}
+.car-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.car-price {
+    font-size: 1.25em;
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.car-specs {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+.car-specs span {
+    font-weight: bold;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+a.car-link {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

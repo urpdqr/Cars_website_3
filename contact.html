@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <script src="nav.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+
+<div class="container">
+  <form action="contact.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="car">Car</label>
+    <select id="car" name="car">
+      <option value="Range Rover 2024">Range Rover 2024</option>
+      <option value="Land Rover Defender 2024">Land Rover Defender 2024</option>
+      <option value="Rolls-Royce Dawn 2021">Rolls-Royce Dawn 2021</option>
+      <option value="Mercedes S-Class 63 E AMG 2024">Mercedes S-Class 63 E AMG 2024</option>
+      <option value="Mini Cooper 2024">Mini Cooper 2024</option>
+      <option value="Toyota Prius 2024">Toyota Prius 2024</option>
+      <option value="Lamborghini Countach LP5000">Lamborghini Countach LP5000</option>
+      <option value="Lamborghini Murcielago LP640 2007">Lamborghini Murcielago LP640 2007</option>
+      <option value="Ferrari Roma 2024">Ferrari Roma 2024</option>
+      <option value="Porsche 911 Turbo S 2024">Porsche 911 Turbo S 2024</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="cars.html">Main Page</a>
+    <a href="about.html">About</a>
+    <a href="#">Clients</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+</body>
+</html>
